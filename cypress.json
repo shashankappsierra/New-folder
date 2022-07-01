@@ -1,0 +1,7 @@
+{
+    "baseUrl": "https://dashboard.perxtech.io/dashboard/signin",
+    "env": {
+        "email": "#email",
+        "password":"#password"
+    }
+}
