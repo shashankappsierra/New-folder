@@ -1,5 +1,6 @@
 /// <reference types="Cypress" />
 describe('Perxtech Task', () => {
+   
     var Button = '.ant-btn.ant-btn-primary.ant-btn-lg'
     it('Verify Creating a reward', () => {
         cy.visit('/')
@@ -35,8 +36,8 @@ describe('Perxtech Task', () => {
         cy.get('.ant-message-notice-content div span').should('exist')
         cy.contains('Bulk Actions').click({ force: true })
         cy.wait('@count1').then((res) => {
-            cy.log(res.response.body.meta.count)
-            cy.log(counts)
+            // cy.log(res.response.body.meta.count)
+            // cy.log(counts)
             expect(res.response.body.meta.count).greaterThan(counts[0])
         })
     })
