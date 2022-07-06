@@ -38,6 +38,7 @@ describe('Perxtech Task', () => {
         cy.wait('@count1').then((res) => {
             // cy.log(res.response.body.meta.count)
             // cy.log(counts)
+            cy.log(counts[0])
             expect(res.response.body.meta.count).greaterThan(counts[0])
         })
     })
